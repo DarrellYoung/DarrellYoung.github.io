@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Darrell L. Young, P.E. | Academic Homepage</title>
+  <meta name="description" content="Academic homepage of Darrell L. Young, P.E., Research Professor at SMU-DDI and Adjunct Professor in SMU Electrical and Computer Engineering." />
+  <style>
+    :root {
+      --bg: #0b1020;
+      --panel: #121933;
+      --panel-2: #182144;
+      --text: #edf2ff;
+      --muted: #b8c4e8;
+      --accent: #89a8ff;
+      --line: #2a376f;
+      --chip: #1b2752;
+      --link: #a8c1ff;
+      --max: 1040px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(180deg, var(--bg), #0f1630 55%, #0b1020);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 28px 20px 64px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.6fr 1fr;
+      gap: 24px;
+      align-items: stretch;
+      margin-top: 10px;
+    }
+
+    .card {
+      background: rgba(18, 25, 51, 0.88);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 28px;
+      box-shadow: 0 18px 42px rgba(0,0,0,0.28);
+      backdrop-filter: blur(4px);
+    }
+
+    h1, h2, h3 { line-height: 1.2; margin: 0 0 12px; }
+    h1 { font-size: clamp(2rem, 4vw, 3.2rem); }
+    h2 { font-size: 1.45rem; margin-top: 0; }
+    h3 { font-size: 1.05rem; color: var(--muted); }
+    p { margin: 0 0 14px; color: var(--muted); }
+
+    .lead {
+      font-size: 1.06rem;
+      max-width: 64ch;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 18px 0 4px;
+    }
+
+    .chip {
+      background: var(--chip);
+      border: 1px solid var(--line);
+      color: var(--text);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 0.94rem;
+    }
+
+    .btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 11px 16px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: var(--panel-2);
+      color: var(--text);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .btn.primary {
+      background: linear-gradient(180deg, #6e92ff, #5579eb);
+      border-color: #7da0ff;
+      color: white;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 20px;
+      margin-top: 22px;
+    }
+
+    .span-7 { grid-column: span 7; }
+    .span-5 { grid-column: span 5; }
+    .span-6 { grid-column: span 6; }
+    .span-12 { grid-column: span 12; }
+
+    ul.clean {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul.clean li {
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(137,168,255,0.12);
+      color: var(--muted);
+    }
+
+    ul.clean li:last-child { border-bottom: none; }
+
+    .meta {
+      display: grid;
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .meta-item {
+      padding: 14px;
+      border-radius: 16px;
+      background: rgba(24,33,68,0.75);
+      border: 1px solid var(--line);
+    }
+
+    .meta-item strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--text);
+    }
+
+    .small { font-size: 0.95rem; }
+
+    footer {
+      margin-top: 36px;
+      color: var(--muted);
+      font-size: 0.92rem;
+      text-align: center;
+    }
+
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+      .span-7, .span-5, .span-6, .span-12 { grid-column: span 12; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="card">
+        <h1>Darrell L. Young, P.E.</h1>
+        <h3>Research Professor, SMU Darwin Deason Institute for Cyber Security (SMU-DDI)<br>Adjunct Professor, SMU Electrical and Computer Engineering</h3>
+        <p class="lead">
+          I work at the intersection of resilient communications, trusted edge computing, AI-enabled mission systems,
+          autonomy, sensing, cybersecurity, and zero-knowledge proof architectures for defense and other high-consequence environments.
+        </p>
+        <div class="chips">
+          <span class="chip">Contested Communications</span>
+          <span class="chip">Edge AI</span>
+          <span class="chip">Autonomy</span>
+          <span class="chip">Cybersecurity</span>
+          <span class="chip">Zero-Knowledge Proofs</span>
+          <span class="chip">Mission Systems</span>
+        </div>
+        <div class="btns">
+          <a class="btn primary" href="mailto:dlyoung@smu.edu">dlyoung@smu.edu</a>
+          <a class="btn" href="https://scholar.google.com/citations?user=djPz3fYAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
+          <a class="btn" href="https://www.semanticscholar.org/author/D.-Young/30551608" target="_blank" rel="noreferrer">Semantic Scholar</a>
+          <a class="btn" href="https://dblp.org/pid/142/3442.html" target="_blank" rel="noreferrer">DBLP</a>
+          <a class="btn" href="https://github.com/DarrellYoung" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn" href="https://wave3ai.org/" target="_blank" rel="noreferrer">Wave3AI.org</a>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Professional Summary</h2>
+        <div class="meta">
+          <div class="meta-item">
+            <strong>Current Roles</strong>
+            <span class="small">Research Professor at SMU-DDI; Adjunct Professor in SMU Electrical and Computer Engineering</span>
+          </div>
+          <div class="meta-item">
+            <strong>Prior Industry Role</strong>
+            <span class="small">Former Raytheon Principal Technical Fellow</span>
+          </div>
+          <div class="meta-item">
+            <strong>Professional Affiliations</strong>
+            <span class="small">IEEE Senior Member; IEEE AESS, CASS, and ComSoc member; Life Member of SPIE and USGIF; former Secretary of the Northern Virginia Chapter of IEEE AESS</span>
+          </div>
+          <div class="meta-item">
+            <strong>Research Themes</strong>
+            <span class="small">Trusted edge architectures, DDIL communications, AI for mission support, sensing and autonomy, quantum and zero-knowledge proof systems, and policy-aware cryptographic architectures</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card span-7">
+        <h2>Research Interests</h2>
+        <ul class="clean">
+          <li><strong>Resilient Communications and Edge Computing:</strong> DDIL-aware context and compute orchestration, secure edge mission support, and cross-echelon decision architectures.</li>
+          <li><strong>AI-Enabled Mission Systems:</strong> role-scoped AI assistance, mission-thread continuity, semantic recovery, and communication-aware reasoning under contested conditions.</li>
+          <li><strong>Sensing and Autonomy:</strong> multi-sensor fusion, autonomy support, and intelligent information dominance for high-consequence operational environments.</li>
+          <li><strong>Cryptographic Assurance:</strong> zero-knowledge proof architectures, policy-bounded execution, and trusted operational workflows.</li>
+        </ul>
+      </div>
+
+      <div class="card span-5">
+        <h2>Links</h2>
+        <ul class="clean">
+          <li><strong>Email:</strong> <a href="mailto:dlyoung@smu.edu">dlyoung@smu.edu</a></li>
+          <li><strong>Semantic Scholar:</strong> <a href="https://www.semanticscholar.org/author/D.-Young/30551608" target="_blank" rel="noreferrer">Profile</a></li>
+          <li><strong>DBLP:</strong> <a href="https://dblp.org/pid/142/3442.html" target="_blank" rel="noreferrer">Author Page</a></li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/DarrellYoung" target="_blank" rel="noreferrer">DarrellYoung</a></li>
+          <li><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=djPz3fYAAAAJ&hl=en" target="_blank" rel="noreferrer">Profile</a></li>
+          <li><strong>ORCID:</strong> <a href="https://orcid.org/0000-0003-3379-4145" target="_blank" rel="noreferrer">0000-0003-3379-4145</a></li>
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/darrell-young-21b71/" target="_blank" rel="noreferrer">Profile</a></li>
+          <li><strong>Nonprofit Research / Prototype Site:</strong> <a href="https://wave3ai.org/" target="_blank" rel="noreferrer">wave3ai.org</a> (hosting ZKP-Studio)</li>
+          <li><strong>SMU Quantum Information Research Group:</strong> <a href="https://s2.smu.edu/~mitch/qirg/qirg-people.html" target="_blank" rel="noreferrer">People Page</a></li>
+        </ul>
+      </div>
+
+      <div class="card span-6">
+        <h2>Selected Topics and Ongoing Work</h2>
+        <ul class="clean">
+          <li>Trusted edge messaging and policy-scoped context delivery under DDIL conditions</li>
+          <li>C8-ISR and cross-echelon orchestration of context and compute</li>
+          <li>Semantic intent codebooks and communication-aware AI for autonomous systems</li>
+          <li>Coalition OPSEC, least-privilege coordination, and agent-native proof mechanisms</li>
+          <li>Research translation and prototype implementation, including ZKP-Studio at <a href="https://wave3ai.org/" target="_blank" rel="noreferrer">wave3ai.org</a></li>
+          <li>Upcoming quantum zero-knowledge proof work expected to be presented at the 2026 Dallas Circuits and Systems conference</li>
+        </ul>
+      </div>
+
+      <div class="card span-6">
+        <h2>For Conference Systems and Review Platforms</h2>
+        <ul class="clean">
+          <li><strong>Name:</strong> Darrell L. Young, P.E.</li>
+          <li><strong>EDAS Identifier:</strong> 97078</li>
+          <li><strong>Semantic Scholar ID:</strong> 30551608</li>
+          <li><strong>DBLP PID:</strong> 142/3442</li>
+          <li><strong>ORCID:</strong> 0000-0003-3379-4145</li>
+          <li><strong>Suggested homepage URL:</strong> <span id="homepage-url">https://darrellyoung.github.io/</span></li>
+        </ul>
+      </div>
+
+      <div class="card span-12">
+        <h2>Short Academic Bio</h2>
+        <p>
+          Dr. Darrell L. Young, P.E. is a Research Professor at the Southern Methodist University Darwin Deason Institute for Cyber Security (SMU-DDI)
+          and an Adjunct Professor in the SMU Department of Electrical and Computer Engineering. He is a former Raytheon Principal Technical Fellow,
+          an IEEE Senior Member, a member of the IEEE Aerospace and Electronic Systems Society (21 years), IEEE Circuits and Systems Society,
+          and IEEE Communications Society, and a Life Member of SPIE and USGIF. He previously served as Secretary of the Northern Virginia Chapter
+          of IEEE AESS and has been an IEEE member for 36 years. His work focuses on AI-enabled mission systems, resilient edge computing,
+          contested communications, sensing, autonomy, quantum and zero-knowledge proof architectures, and secure operational systems for defense
+          and other high-consequence environments.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Darrell L. Young, P.E. • Built for GitHub Pages
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
